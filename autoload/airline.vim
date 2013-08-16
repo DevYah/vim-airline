@@ -175,7 +175,7 @@ function! airline#update_highlight()
 
   let mode_string = join(l:mode)
   if get(w:, 'airline_lastmode', '') != mode_string
-    call airline#highlight(l:mode)
+    "call airline#highlight(l:mode)
     let w:airline_lastmode = mode_string
   endif
   return ''
